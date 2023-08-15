@@ -1,131 +1,133 @@
 body {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    min-height: 100vh;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
     background-color: #f5f0f4;
     font-family: Arial, sans-serif;
-}
-/* section { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* Estilos para el encabezado */
-header {
-    background-color: #6d8efc;
-    color: rgb(248, 252, 249);
-    text-align: center;
-    padding: 20px;
+    height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
     width: 100%;
 }
 
-/* Estilos para el contenido principal */
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f0f4;
+    display: flex;
+    flex-direction: column;
+}
+/* punto 1 */
+header {
+    align-items: center;
+    background-color: #6d8efc;
+    display: flex;
+    flex-basis: 50px;
+    justify-content: center;
+}
+
 main {
     padding: 20px;
     overflow: auto;
 }
 
-/* Estilos para el pie de página */
 footer {
-    background-color: #4f9fe5;
-    color: rgb(119, 207, 227);
+    /* border: 1px solid #000; */
+    background-color: #6d8efc;
+    color: #0a0a0a;
+    flex-basis: 50px;
+    font-size: 0.8em;
     text-align: center;
-    padding: 20px;
-    position: absolute;
+    padding: 10px;
+  }
+/* footer {
+    background-color: #4f9fe5;
     bottom: 0;
+    color: rgb(119, 207, 227);
+    padding: 4px;
+    position: absolute;
+    text-align: center;
     width: 100%;
-}
+    overflow: auto;
+} */
 
 p {
-    line-height: 1.5;
     color: #336699;
     font-size: 16px;
-    margin-bottom: 15px; /* Espacio inferior cómodo */
+    line-height: 1.5;
+    margin-bottom: 15px; 
 }
-
-
+/* punto 2 */
 .elevated-button {
-    padding: 10px 20px;
+    background-color: #eff4f7;
     border: none;
-    background-color: #3498db;
-    color: rgb(250, 75, 75);
     border-radius: 10px;
+    color: rgb(18, 17, 17);
     cursor: pointer;
+    padding: 10px 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .elevated-button:hover {
-    transform: translateY(-3px);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
 
 .elevated-button:active {
-    transform: translateY(0px);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(0px);
 }
-
+/* punto 3 */
 .navigation {
-    background-color: #f0e6e6;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    /* background-color: #f0e6e6; */
+    display: flex;
     height: 50px;
+    justify-content: center;
 }
 
-/* Estilos para los elementos de navegación */
 .nav-link {
-    color: rgb(19, 19, 19);
-    text-decoration: none;
+    color: rgb(5, 5, 5);
     padding: 10px 20px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: #555;
+    background-color: #4892e2;
 }
-
+/* punto 4 */
 .container {
     display: flex;
-    margin-top: 20px;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
-/* Estilos para la columna izquierda */
 .column-left {
-    flex: 30%;
     background-color: #55c3d6;
+    flex: 30%;
     padding: 20px;
 }
 
-/* Estilos para la columna derecha */
 .column-right {
-    flex: 70%;
     background-color: #458eef;
+    flex: 70%;
     padding: 20px;
 }
-/* Espacio inferior cómodo */
+/* punto 5 */
 .my-paragraph {
-    line-height: 1.5;
     color: #336699;
     font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 15px; 
 }
-
-/* Estilos para el campo de entrada de texto */
+/* punto 6 */
 .input-field {
-    width: 20%;
-    padding: 5px;
     border: 2px solid #336699;
     border-radius: 5px;
-    font-size: 16px;
     color: #333;
+    font-size: 16px;
+    padding: 5px;
     transition: border-color 0.3s ease;
+    width: 20%;
 }
 
 .input-field::placeholder {
@@ -137,111 +139,51 @@ p {
     border-color: #66aaff;
     outline: none;
 }
-
-/* Estilos para el círculo */
+/* punto 7 */
 .circle {
-    width: 50px;
-    height: 50px;
-    background-color: #336699;
+    width: 30px;
+    height: 30px;
+    background-color: #84baf0;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-/* Animación al pasar el cursor */
 .circle:hover {
     transform: scale(1.2);
 }
-
-/* Estilos para el elemento de bloque de cita */
+/* punto 8 */
 .blockquote {
     border-left: 5px solid #FF4500;
     padding: 15px;
-    /* background-color: #f9f9f9; */
+    background-color: #f9f9f9;
 }
 
-/* Estilos para el texto citado */
 .blockquote p {
     margin: 0;
     font-size: 18px;
     color: #333;
 }
-
-/* Estilos para el autor
-.blockquote footer {
-    margin-top: 10px;
-    font-style: italic;
-    color: #666;
-} */
-
-/* Estilos para la lista desordenada */
+/* punto 9 */
 .lista {
-    list-style-type: square; /* Cambia las viñetas a cuadrados */
-    color: #228B22; /* Color verde (#228B22) */
-    padding-left: 20px; /* Añade espacio a la izquierda para la viñeta */
+    list-style-type: square; 
+    color: #228B22; 
+    padding-left: 20px; 
 }
 
-/* Estilos para los elementos de la lista */
 .lista li {
     margin: 5px 0;
 }
-
-/* Estilos para la superposición */
+/* punto 12 */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
-    z-index: 1; /* Coloca la superposición encima del contenido */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; 
 }
-
-/* Estilos para el menú desplegable */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Estilos para el botón */
-.dropdown-button {
-    padding: 10px 20px;
-    background-color: #336699;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilos para la lista desplegable */
-.dropdown-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 5px 0;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-/* Mostrar la lista al hacer clic en el botón */
-.dropdown.active .dropdown-list {
-    display: block;
-}
-
-/* Estilos para los elementos de la lista */
-.dropdown-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Cambiar el cursor al pasar sobre los elementos de la lista */
-.dropdown-list li:hover {
-    background-color: #ddd;
-}
-
-/* Estilos para la tabla */
+/* punto 14 */
 .striped-table {
     width: 80%;
     border-collapse: collapse;
@@ -255,12 +197,131 @@ p {
     border: 1px solid #ccc;
 }
 
-/* Estilos para filas pares */
 .striped-table tbody tr:nth-child(even) {
     background-color: #F5F5F5;
 }
 
-/* Estilos para filas impares */
 .striped-table tbody tr:nth-child(odd) {
     background-color: #FFFFFF;
+}
+/* punto 15 */
+.tooltip-container {
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .tooltip-trigger {
+    cursor: pointer;
+    border-bottom: 1px dotted #041e41;
+  }
+  .tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: #faf7f7;
+    color: #0a0a0a;
+    text-align: center;
+    border-radius: 2px;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* punto 16 */
+  .progress-bar {
+    width: 100%;
+    background-color: #98bfdc;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 70%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease;
+}
+/* punto 17 */
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.blue-row {
+    background-color: #B0E0E6;
+}
+
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+/* punto 18 */
+hr {
+    border: 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 10px;
+    width: 1000px;
+    background: linear-gradient(
+        135deg,
+        #FF5733,
+        #FFC300 100%
+     );
+}
+/* punto 19 */
+.card {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #7a8182;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #0d0d0d;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #101010;
+}
+/* punto 20 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para las celdas */
+.grid-item {
+    background-color: #66b8e4;
+    padding: 20px;
+    border: 1px solid #181616;
+    text-align: center;
 }
