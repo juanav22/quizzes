@@ -1,0 +1,266 @@
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0f4;
+    font-family: Arial, sans-serif;
+}
+/* section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Estilos para el encabezado */
+header {
+    background-color: #6d8efc;
+    color: rgb(248, 252, 249);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4f9fe5;
+    color: rgb(119, 207, 227);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    line-height: 1.5;
+    color: #336699;
+    font-size: 16px;
+    margin-bottom: 15px; /* Espacio inferior cómodo */
+}
+
+
+.elevated-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: rgb(250, 75, 75);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elevated-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.elevated-button:active {
+    transform: translateY(0px);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    background-color: #f0e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+/* Estilos para los elementos de navegación */
+.nav-link {
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la columna izquierda */
+.column-left {
+    flex: 30%;
+    background-color: #55c3d6;
+    padding: 20px;
+}
+
+/* Estilos para la columna derecha */
+.column-right {
+    flex: 70%;
+    background-color: #458eef;
+    padding: 20px;
+}
+/* Espacio inferior cómodo */
+.my-paragraph {
+    line-height: 1.5;
+    color: #336699;
+    font-size: 16px;
+    margin-bottom: 15px; 
+}
+
+/* Estilos para el campo de entrada de texto */
+.input-field {
+    width: 20%;
+    padding: 5px;
+    border: 2px solid #336699;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #999;
+    opacity: 0.6;
+}
+
+.input-field:focus {
+    border-color: #66aaff;
+    outline: none;
+}
+
+/* Estilos para el círculo */
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #336699;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el cursor */
+.circle:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el elemento de bloque de cita */
+.blockquote {
+    border-left: 5px solid #FF4500;
+    padding: 15px;
+    /* background-color: #f9f9f9; */
+}
+
+/* Estilos para el texto citado */
+.blockquote p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilos para el autor
+.blockquote footer {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+} */
+
+/* Estilos para la lista desordenada */
+.lista {
+    list-style-type: square; /* Cambia las viñetas a cuadrados */
+    color: #228B22; /* Color verde (#228B22) */
+    padding-left: 20px; /* Añade espacio a la izquierda para la viñeta */
+}
+
+/* Estilos para los elementos de la lista */
+.lista li {
+    margin: 5px 0;
+}
+
+/* Estilos para la superposición */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    z-index: 1; /* Coloca la superposición encima del contenido */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para el botón */
+.dropdown-button {
+    padding: 10px 20px;
+    background-color: #336699;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para la lista desplegable */
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Mostrar la lista al hacer clic en el botón */
+.dropdown.active .dropdown-list {
+    display: block;
+}
+
+/* Estilos para los elementos de la lista */
+.dropdown-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Cambiar el cursor al pasar sobre los elementos de la lista */
+.dropdown-list li:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para la tabla */
+.striped-table {
+    width: 80%;
+    border-collapse: collapse;
+    /* display: flex; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.striped-table th, .striped-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para filas pares */
+.striped-table tbody tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+/* Estilos para filas impares */
+.striped-table tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
