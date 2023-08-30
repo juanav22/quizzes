@@ -47,8 +47,8 @@ console.log('[Question #6]: ', outfit);
  * Question 7
  * Using a ternary operator, determine if the first element of the array ["apple", "banana", "cherry"] is "apple". If true, set a variable isApple to true, otherwise set it to false.
  */
-let fruits = ["apple", "banana", "cherry"];
-let isApple = fruits[0] === 'apple' ? true : false;
+const fruits = ["apple", "banana", "cherry"];
+const isApple = fruits[0] === 'apple' ? true : false;
 console.log('[Question #7]: ', isApple);
 /**
  * Question 8
