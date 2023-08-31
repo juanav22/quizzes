@@ -6,22 +6,22 @@
  * Question 1
  * Declare a variable isSunny with a value of true. Use a ternary operator to set a variable activity to "Go to the beach" if isSunny is true and "Stay indoors" otherwise.
  */
-let isSunny = true;
-let activity = isSunny ? "Go to the beach" : "Stay indoors";
+const isSunny = true;
+const activity = isSunny ? "Go to the beach" : "Stay indoors";
 console.log('[Question #1]: ', activity);
 /**
  * Question 2
  * Given a variable age = 20, use a ternary operator to determine if the age is greater than 18. If so, set a variable status to "Adult", otherwise set it to "Minor".
  */
-let age = 20;
-let status = age > 18 ?  "Adult" : "Minor";
+const age = 20;
+const status = age > 18 ?  "Adult" : "Minor";
 console.log('[Question #2]: ', status);
 /**
  * Question 3
  * Using a ternary operator, check if the length of the array [1, 2, 3, 4] is even. If true, set a variable isEvenLength to true, otherwise set it to false.
  */
-let number = [1, 2, 3, 4];
-let isEvenLength = number.length % 2 === 0 ? true : false;
+const number = [1, 2, 3, 4];
+const isEvenLength = number.length % 2 === 0 ? true : false;
 console.log('[Question #3]: ', isEvenLength);
 /**
  * Question 4
@@ -50,6 +50,7 @@ console.log('[Question #6]: ', outfit);
 const fruits = ["apple", "banana", "cherry"];
 const isApple = fruits[0] === 'apple' ? true : false;
 console.log('[Question #7]: ', isApple);
+
 /**
  * Question 8
  * Given a variable height = 180, use a ternary operator to set a variable basketball to "You're tall enough to play" if height is greater than 175 and "Might be a bit short" otherwise.
@@ -61,12 +62,12 @@ console.log('[Question #8]: ', basketball);
  * Question 9
  * Given a variable day = "Sunday", use a ternary operator to set a variable workday to "Weekend" if day is either "Saturday" or "Sunday" and "Workday" otherwise.
  */
-let day = 'Sunday';
-let workday = day === 'Saturday' || day === 'Sunday' ? 'Weekend' : 'Workday';
+const day = 'Sunday';
+const workday = day === 'Saturday' || day === 'Sunday' ? 'Weekend' : 'Workday';
 console.log('[Question #9]: ', workday);
 /**
  * Question 10
  * Use a ternary operator to determine if the string "hello" is of length 5. If true, set a variable isLengthFive to true, otherwise set it to false.
  */
-let isLengthFive = 'hello'.length === 5 ? true : false;
+const isLengthFive = 'hello'.length === 5 ? true : false;
 console.log('[Question #10]: ', isLengthFive);
