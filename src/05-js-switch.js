@@ -15,14 +15,14 @@ const color = 'red';
 let feeling;
 
 switch (color) {
-  case 'red':
-    feeling = 'passionate';
+    case 'red':
+        feeling = 'passionate';
     break;
-  case 'blue':
-    feeling = 'calm';
+    case 'blue':
+        feeling = 'calm';
     break;
-  default:
-    feeling = 'neutral';
+    default:
+        feeling = 'neutral';
 }
 console.log('[Question #1]: ', feeling);
 /**
@@ -36,7 +36,7 @@ switch (day) {
     case 'Saturday':
     case 'Sunday':
         result = 'Weekend';
-        break;
+    break;
     default: 
         result = 'Working day';
 }
@@ -52,16 +52,16 @@ let grade;
 switch (true) {
     case score >= 90:
         grade = 'A';
-        break;
+    break;
     case score >= 80 - 89:
         grade = 'B';
-        break;
+    break;
     case score >= 70-79:
         grade = 'C';
-        break;
+    break;
     case score >= 60-69:
         grade = 'D';
-        break; 
+    break; 
     default:
         grade = 'F';
 }
@@ -79,7 +79,7 @@ switch (fruit) {
     case 'blueberries':
     case 'raspberries':
         rlt = 'berry';
-        break;
+    break;
     default:
         rlt = 'Not a berry';
 }
@@ -96,22 +96,22 @@ switch (month) {
     case 'February':
     case 'March':
         quarter = 'quater 1'
-        break;
+    break;
     case 'April':
     case 'May':
     case 'June':
         quarter = 'quater 2'
-        break;
+    break;
     case 'July':
     case 'August':
     case 'September':
         quarter = 'quater 3'
-        break;
+    break;
     case 'October':
     case 'November':
     case 'December':
         quarter = 'quater 4'
-        break;
+    break;
 }
 console.log('[Question #5]: ', quarter);
 /**
@@ -124,13 +124,13 @@ let size;
 switch (true) {
     case number >= 1 && number <= 3:
         size = 'small';
-        break;
+    break;
     case number >= 4 && number <= 6:
         size = 'medium';
-        break;
+    break;
     case number >= 7 && number <= 9:
         size = 'large';
-        break;
+    break;
 }
 console.log('[Question #6]: ', size);
 
@@ -142,14 +142,14 @@ const pet = 'dog';
 let petList;
 
 switch (pet) {
-  case 'dog':
-    petList = 'Canine';
+    case 'dog':
+        petList = 'Canine';
     break;
-  case 'cat':
-    petList = 'Feline';
+    case 'cat':
+        petList = 'Feline';
     break;
-  default:
-    petList = 'Unknown';
+    default:
+        petList = 'Unknown';
 }
 console.log('[Question #7]: ', petList);
 /**
@@ -162,13 +162,13 @@ let speed;
 switch (transportMode) {
     case 'plane':
         speed = 'Fast';
-        break;
+    break;
     case 'car':
         speed = 'Medium';
-        break;
+    break;
     case 'bicycle':
         speed = 'Slow';
-        break;
+    break;
 }
 console.log('[Question #8]: ', speed);
 /**
@@ -181,13 +181,13 @@ let directionName;
 switch (direction) {
     case 'N':
         directionName = 'North';
-        break;
+    break;
     case 'S':
         directionName = 'South';
-        break;
+    break;
     case 'E':
         directionName = 'East';
-        break;
+    break;
 }
 console.log('[Question #9]: ', directionName);
 /**
